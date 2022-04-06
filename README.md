@@ -36,3 +36,18 @@ spec:
     
     limits.memory: "40Gi"
 
+Service yaml file:
+==================
+apiVersion: v1
+kind: Service
+metadata: 
+   -name: frontend-service
+spec:
+  type: NodePort
+  ports:
+  - targetPort: 80
+    port: 80
+    NodePort: 300080
+  selectors:
+     app: my-app
+     type: front-end
