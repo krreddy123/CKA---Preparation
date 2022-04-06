@@ -66,3 +66,30 @@ spec:
    selectors:
       app: my-app
       type: back-end
+      
+      
+      
+      
+LoadBalance Service:
+
+apiVersion: v1
+
+kind: Service
+
+metadata:
+
+   -name: frontend-service
+   
+spec:
+
+  type: LoadBalancer
+  
+  ports:
+  
+  - targetPort: 80
+  - port: 80
+    NodePort: 300080
+  selectors:
+     app: my-app
+     type: front-end
+     
