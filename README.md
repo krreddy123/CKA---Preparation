@@ -21,6 +21,7 @@ metadata:
   name: pods-medium
   
   namespace: Dev
+  
 spec:
 
   hard:
