@@ -19,6 +19,7 @@ kind: ResourceQuota
 metadata:
 
   name: pods-medium
+  
   namespace: Dev
 spec:
 
