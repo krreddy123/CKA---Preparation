@@ -10,6 +10,7 @@ To view the pods in the all the namespaces:
 kubectl get pods --all-namespaces
 
 ResourceQuota yaml file:
+=======================
 
 apiVersion: v1
 
