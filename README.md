@@ -51,3 +51,18 @@ spec:
   selectors:
      app: my-app
      type: front-end
+
+
+
+apiVersion: v1
+kind: Service
+metadata: 
+  name: back-end
+spec:
+   type: ClusterIP
+   ports:
+     - targetPort: 80
+       port: 80
+   selectors:
+      app: my-app
+      type: back-end
