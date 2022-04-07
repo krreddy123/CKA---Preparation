@@ -114,4 +114,30 @@ target:
   name: node02
 
 =============================
+
+Taint and Tolerations:
+
+Taint the node:
+
+kubectl taint nodes node-name key=value:taint-effect
+
+What happens to the pods that do not tolerate this taint
+
+NoSchedule | PreferNoSchedule | NoExecute
+
+EX:
+
+kubectl taint nodes node1 app=blue:NoSchedule
+
+tolerations:
+  
+  - key: "app"
+  
+    operator: "Equal"
+    
+    value: "blue"
+    
+    effect: "NoSchedule"
+    
+    
      
