@@ -93,3 +93,25 @@ spec:
      app: my-app
      type: front-end
      
+ ===========================
+ Binding:
+ ========
+ 
+apiVersion: v1
+
+kind: Binding
+
+metadata: 
+
+  name: nginx
+  
+target:
+
+  apiVersion: v1
+  
+  kind: Node
+  
+  name: node02
+
+=============================
+     
